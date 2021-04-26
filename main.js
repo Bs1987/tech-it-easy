@@ -164,21 +164,12 @@ const inventory = [
 ];
 
 //Program stuff
-let tvsoldArray = inventory.map((television) => {
-    console.log("HI", television, "SOLD", television.sold, "STOCK", television.originalStock)
-
-
-    const tvsToSell = television.originalStock - television.sold;
-    console.log("WE HAVE TO SELL THIS MANY:", tvsToSell);
-    return tvsToSell;
-
+let tvSoldArray = inventory.map((television) => {
+    return television.originalStock - television.sold;
 })
-console.log("NUMBER OF TVS TO SELL IN ARRAY:", tvsoldArray);
 
 let total = 0;
-for (let i = 0; i < tvsoldArray.length; i++) {
-const tvSoldNumber = tvsoldArray[i];
-console.log(tvSoldNumber);
-total = total + tvSoldNumber;
+for (let i = 0; i < tvSoldArray.length; i++) {
+    total += tvSoldArray[i];
 }
 console.log("TOTAL", total);
