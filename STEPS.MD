@@ -52,7 +52,10 @@ Strat 3:
 - [x] expect something like this: `[3, 4, 9, 11]`
 - [x] Loop over the array of numbers and add them together (maybe google it)
 
+3. Do programming (and check each step)
+4. Cleanup (refactor)
 
+Red (werkt niet) -> Green (werkt wel, maar slordig) -> Refactor (opschonen)
 ##Opdracht 1b:
 
 Zorg ervoor dat dit aantal in het rood wordt weergegeven op de pagina

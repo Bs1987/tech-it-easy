@@ -164,12 +164,18 @@ const inventory = [
 ];
 
 //Program stuff
-let tvSoldArray = inventory.map((television) => {
-    return television.originalStock - television.sold;
-})
+function calculateTvToSellCount() {
+    let tvSoldArray = inventory.map((television) => {
+        return television.originalStock - television.sold;
+    })
 
-let total = 0;
-for (let i = 0; i < tvSoldArray.length; i++) {
-    total += tvSoldArray[i];
+    let total = 0;
+
+    for (let i = 0; i < tvSoldArray.length; i++) {
+        total += tvSoldArray[i];
+    }
+    return total;
 }
-console.log("TOTAL", total);
+
+const totalCount = calculateTvToSellCount();
+console.log("TOTAL", totalCount);
