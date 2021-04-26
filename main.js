@@ -176,16 +176,12 @@ function calculateTvToSellCount() {
     }
     return total;
 }
-
-const totalCount = calculateTvToSellCount();
-console.log("TOTAL", totalCount);
-
-
-const tvToSellElement = document.createElement("h1");
-console.log("NEW ELEMENT", tvToSellElement);
-
-tvToSellElement.textContent = `We need to sell: ${totalCount} tv's`;
-tvToSellElement.style.color = 'red';
-
-document.body.appendChild(tvToSellElement);
+function displayTvToSellCount (){
+    const totalCount = calculateTvToSellCount();
+    const tvToSellElement = document.createElement("h1");
+    tvToSellElement.textContent = `We need to sell: ${totalCount} tv's`;
+    tvToSellElement.style.color = 'red';
+    document.body.appendChild(tvToSellElement);
+}
+displayTvToSellCount()
 
