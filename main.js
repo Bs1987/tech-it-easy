@@ -186,3 +186,5 @@ console.log("NEW ELEMENT", tvToSellElement);
 
 tvToSellElement.textContent = `We need to sell: ${totalCount} tv's`;
 
+document.body.appendChild(tvToSellElement);
+
