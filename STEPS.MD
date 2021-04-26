@@ -44,9 +44,9 @@ Strat 3:
 - [x] make a variable to store the total (tvsToSell)
 - [X] inventory.map(~ *callback here* ~)
 - [x] write callback for map
-   - [] parameter: television
-   - [] log the data we need: televison.sold, television.originalStock
-   - [] do math: const tvsToSell = originalStock - sold
+   - [x] parameter: television
+   - [x] log the data we need: televison.sold, television.originalStock
+   - [x] do math: const tvsToSell = originalStock - sold
    - [] console.log(tvsToSell)
    - [] return value from the callback
 - [] expect something like this: `[3, 4, 9, 11]`
