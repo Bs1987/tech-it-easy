@@ -41,7 +41,16 @@ Strat 3:
 
 2. make todolist
 
-
+- [] make a variable to store the total
+- [] inventory.map(~ *callback here* ~)
+- [] write callback for map
+   - [] parameter: television
+   - [] log the data we need: televison.sold, television.originalStock
+   - [] do math: const tvsToSell = originalStock - sold
+   - [] console.log(tvsToSell)
+   - [] return value from the callback
+- [] expect something like this: `[3, 4, 9, 11]`
+- [] Loop over the array of numbers and add them together (maybe google it)
 
 
 ##Opdracht 1b:
