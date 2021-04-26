@@ -183,5 +183,5 @@ function displayTvToSellCount (){
     tvToSellElement.style.color = 'red';
     document.body.appendChild(tvToSellElement);
 }
-displayTvToSellCount()
+displayTvToSellCount();
 
