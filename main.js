@@ -183,3 +183,6 @@ console.log("TOTAL", totalCount);
 
 const tvToSellElement = document.createElement("h1");
 console.log("NEW ELEMENT", tvToSellElement);
+
+tvToSellElement.textContent = `We need to sell: ${totalCount} tv's`;
+
