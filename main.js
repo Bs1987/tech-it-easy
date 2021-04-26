@@ -174,3 +174,11 @@ let tvsoldArray = inventory.map((television) => {
 
 })
 console.log("NUMBER OF TVS TO SELL IN ARRAY:", tvsoldArray);
+
+let total = 0;
+for (let i = 0; i < tvsoldArray.length; i++) {
+const tvSoldNumber = tvsoldArray[i];
+console.log(tvSoldNumber);
+total = total + tvSoldNumber;
+}
+console.log("TOTAL", total);

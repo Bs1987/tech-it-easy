@@ -47,10 +47,10 @@ Strat 3:
    - [x] parameter: television
    - [x] log the data we need: televison.sold, television.originalStock
    - [x] do math: const tvsToSell = originalStock - sold
-   - [] console.log(tvsToSell)
-   - [] return value from the callback
-- [] expect something like this: `[3, 4, 9, 11]`
-- [] Loop over the array of numbers and add them together (maybe google it)
+   - [x] console.log(tvsToSell)
+   - [x] return value from the callback
+- [x] expect something like this: `[3, 4, 9, 11]`
+- [x] Loop over the array of numbers and add them together (maybe google it)
 
 
 ##Opdracht 1b:
