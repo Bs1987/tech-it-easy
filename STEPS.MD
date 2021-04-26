@@ -56,6 +56,22 @@ Strat 3:
 4. Cleanup (refactor)
 
 Red (werkt niet) -> Green (werkt wel, maar slordig) -> Refactor (opschonen)
+
+
 ##Opdracht 1b:
 
 Zorg ervoor dat dit aantal in het rood wordt weergegeven op de pagina
+
+1. Choose strategy
+   
+   - create an element
+    
+2. Make todolist
+   
+    - [] make a variable for the new element
+    - [] create an element (document.createElement)
+    - [] set content by changing elements: element.textContent = total
+    - [] appenChild (stick it on the page)
+    
+3. Do programming
+
