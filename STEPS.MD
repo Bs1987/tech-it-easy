@@ -15,9 +15,33 @@ Hoeveel exemplaren moeten we nog verkopen? Schrijf een functie die dit berekent.
 - totaal: allOriginalStock - allSold = alle tv's to sell
 - moet ooit nog in een functie komen
 
+Input: `[{}, {}, {}, {}, {}]`;
+
+Output: 48
+
+
 STEPS:
 
--
+1. choose strategy:
+    - methods: map, find filter, push, sort
+    - loops
+
+-> Strat 1:
+
+- Map: `[{}, {}, {}, {}]` -> originalStock - sold -> [3, 4, 9, 11];
+- for loop `[3, 4, 9, 11]` -> 27
+
+Strat 2:
+
+- for loop `[{}, {}, {}, {}]` -> 27
+
+Strat 3:
+
+- Google how to add numbers from array objects
+
+2. make todolist
+
+
 
 
 ##Opdracht 1b:
