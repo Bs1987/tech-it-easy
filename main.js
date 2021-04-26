@@ -165,3 +165,4 @@ const inventory = [
 
 //Program stuff
 
+let tvsToSell = [];
