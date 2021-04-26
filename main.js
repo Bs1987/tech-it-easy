@@ -165,7 +165,7 @@ const inventory = [
 
 //Program stuff
 let tvsoldArray = inventory.map((television) => {
-  console.log("HI", television)
+  console.log("HI", television, "SOLD", television.sold, "STOCK", television.originalStock)
 })
 
 
