@@ -1,5 +1,4 @@
 // VOORRAAD ARRAY MET TV'S
-console.log("CHECKING IN")
 const inventory = [
     {
         type: '43PUS6504/12',
@@ -179,7 +178,7 @@ function calculateTvToSellCount() {
 function displayTvToSellCount (){
     const totalCount = calculateTvToSellCount();
     const tvToSellElement = document.createElement("h1");
-    tvToSellElement.textContent = `We need to sell: ${totalCount} tv's`;
+    tvToSellElement.textContent = `We need to sell: ${totalCount} tvs`;
     tvToSellElement.style.color = 'red';
     document.body.appendChild(tvToSellElement);
 }
