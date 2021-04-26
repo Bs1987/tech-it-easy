@@ -68,7 +68,7 @@ Zorg ervoor dat dit aantal in het rood wordt weergegeven op de pagina
     
 2. Make todolist
    
-    - [] make a variable for the new element
+    - [x] make a variable for the new element
     - [] create an element (document.createElement)
     - [] set content by changing elements: element.textContent = total
     - [] appenChild (stick it on the page)
