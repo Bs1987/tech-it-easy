@@ -41,8 +41,8 @@ Strat 3:
 
 2. make todolist
 
-- [] make a variable to store the total (tvsToSell)
-- [] inventory.map(~ *callback here* ~)
+- [x] make a variable to store the total (tvsToSell)
+- [X] inventory.map(~ *callback here* ~)
 - [] write callback for map
    - [] parameter: television
    - [] log the data we need: televison.sold, television.originalStock

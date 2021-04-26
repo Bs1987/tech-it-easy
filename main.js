@@ -166,3 +166,8 @@ const inventory = [
 //Program stuff
 
 let tvsToSell = [];
+
+inventory.map(() => {
+
+  console.log("I AM MAPPED INVENTORY");
+})
