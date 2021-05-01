@@ -193,4 +193,5 @@ inventory.map( (television) => {
     console.log("These are the tv types");
     let tvType = television.type;
     console.log(tvType);
+    return tvType;
 })

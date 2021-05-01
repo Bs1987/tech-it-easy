@@ -107,11 +107,11 @@ STEPS:
 
 - [x] make a variable to store the total (tvTypes)
 - [x] inventory.map(~ *callback here* ~)
-- [] write callback for map
-    - [] parameter: television
-    - [] log the data we need: televison.type
-    - [] console.log(televison.type)
-    - [] return value from the callback
+- [x] write callback for map
+    - [x] parameter: television
+    - [x] log the data we need: televison.type
+    - [x] console.log(televison.type)
+    - [x] return value from the callback
 - [] expect something like this: `[43PUS6504/12', 43PUS6504/12', 43PUS6504/12', 43PUS6504/12', etc]`
 - [] Loop over the array of types and return them after each other (maybe google it)
 
