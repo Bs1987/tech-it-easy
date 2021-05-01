@@ -192,21 +192,17 @@ displayTvToSellCount();
 const tvTypes = inventory.map((tvType) => {
     return tvType.type;
 });
+console.log("We have these tv types: ", tvTypes);
 
-// * **Opdracht 2b:** Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die volledig uitverkocht zijn.
-// - use functions from assignment 1:
-// - if television.originalStock - television.sold === 0 return the object
-// - count amount of objects returned
-// - return amount of objects counted
-//
-// todolist:
-//     - make variable tvSoldOut
-// - call find amount of tv sold
-// - find amount of tv in stock
-// - if sold-instock = 0 return value
-//
-
-let tvSoldArray = inventory.map((television) => {
-    return television.originalStock - television.sold;
+const tvSold = inventory.map( (television) => {
+    return television.sold;
+});
+const tvInStock = inventory.map( (television) => {
+    return television.originalStock;
 })
-console.log(tvSoldArray);
+for (let i = 0; i < inventory.length; i++) {
+    let tvsLeft = tvSold[i] - tvInStock[i];
+    if (tvsLeft === 0) {
+        console.log("this tv has sold out", inventory[i]);
+    }
+}
