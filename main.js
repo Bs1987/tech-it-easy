@@ -172,15 +172,19 @@ function calculateTvToSellCount() {
 
     for (let i = 0; i < tvSoldArray.length; i++) {
         total += tvSoldArray[i];
+
     }
+
     return total;
 }
-function displayTvToSellCount (){
+
+function displayTvToSellCount() {
     const totalCount = calculateTvToSellCount();
     const tvToSellElement = document.createElement("h1");
     tvToSellElement.textContent = `We need to sell: ${totalCount} tvs`;
     tvToSellElement.style.color = 'red';
     document.body.appendChild(tvToSellElement);
 }
+
 displayTvToSellCount();
 

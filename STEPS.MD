@@ -75,3 +75,53 @@ Zorg ervoor dat dit aantal in het rood wordt weergegeven op de pagina
     
 3. Do programming
 
+#### Opdracht 2
+* **Opdracht 2a:** Gebruik een array-methode om een array te maken met alle tv-type namen.
+  Hoeveel exemplaren moeten we nog verkopen? Schrijf een functie die dit berekent.
+
+- voorraad - verkocht
+- formule: originalStock - sold = tv's to sell
+- alle original stock bij elkaar optellen (allOriginalStock)
+- Alle sold bij elkaar optellen (allSold)
+- totaal: allOriginalStock - allSold = alle tv's to sell
+- moet ooit nog in een functie komen
+
+Input: `[{}, {}, {}, {}, {}]`;
+
+Output: 48
+
+
+STEPS:
+
+1. choose strategy:
+    - methods: map, find filter, push, sort
+    - loops
+
+-> Strategy:
+
+- Map: `[{}, {}, {}, {}]` -> type -> [43PUS6504/12', 43PUS6504/12', 43PUS6504/12', 43PUS6504/12', etc];
+- for loop `[43PUS6504/12', 43PUS6504/12', 43PUS6504/12', 43PUS6504/12', etc]` -> tvTypes behind each other
+
+
+2. make todolist
+
+- [] make a variable to store the total (tvTypes)
+- [] inventory.map(~ *callback here* ~)
+- [] write callback for map
+    - [] parameter: television
+    - [] log the data we need: televison.type
+    - [] console.log(televison.type)
+    - [] return value from the callback
+- [] expect something like this: `[43PUS6504/12', 43PUS6504/12', 43PUS6504/12', 43PUS6504/12', etc]`
+- [] Loop over the array of types and return them after each other (maybe google it)
+
+3. Do programming (and check each step)
+4. Cleanup (refactor)
+
+Red (werkt niet) -> Green (werkt wel, maar slordig) -> Refactor (opschonen)
+
+
+
+* **Opdracht 2b:** Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die volledig uitverkocht zijn.
+* **Opdracht 2c:** Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die over AmbiLight beschikken.
+* **Opdracht 2d:** Schrijf een functie die alle tv's van laagste naar hoogste prijs sorteert.
