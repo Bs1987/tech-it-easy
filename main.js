@@ -195,3 +195,5 @@ inventory.map( (television) => {
     console.log(tvType);
     return tvType;
 })
+
+let tvTypeArray = [];
