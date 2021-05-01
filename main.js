@@ -192,8 +192,6 @@ displayTvToSellCount();
 const tvTypes = inventory.map((tvType) => {
     return tvType.type;
 });
-console.log("We have these tv types: ", tvTypes);
-
 const tvSold = inventory.map( (television) => {
     return television.sold;
 });
@@ -203,13 +201,15 @@ const tvInStock = inventory.map( (television) => {
 for (let i = 0; i < inventory.length; i++) {
     let tvsLeft = tvSold[i] - tvInStock[i];
     if (tvsLeft === 0) {
-        console.log("this tv has sold out", inventory[i]);
     }
 }
 
-const tvOptions = inventory.map((television) => {
-    return television.options;
+const tvAmbilight = inventory.map((television) => {
+    return television.options.ambiLight;
 })
+
 for (let i = 0; i < inventory.length; i++) {
-    console.log("this tv", inventory[i], "has these options", tvOptions[i]);
+   if (tvAmbilight[i] === true) {
+       console.log("This tv has ambilight: ", inventory[i]);
+   }
 }
