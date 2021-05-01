@@ -206,3 +206,10 @@ for (let i = 0; i < inventory.length; i++) {
         console.log("this tv has sold out", inventory[i]);
     }
 }
+
+const tvOptions = inventory.map((television) => {
+    return television.options;
+})
+for (let i = 0; i < inventory.length; i++) {
+    console.log("this tv", inventory[i], "has these options", tvOptions[i]);
+}
