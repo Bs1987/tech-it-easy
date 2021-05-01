@@ -123,5 +123,17 @@ Red (werkt niet) -> Green (werkt wel, maar slordig) -> Refactor (opschonen)
 
 
 * **Opdracht 2b:** Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die volledig uitverkocht zijn.
+  - use functions from assignment 1:
+    - if television.originalStock - television.sold === 0 return the object
+    - count amount of objects returned
+    - return amount of objects counted
+    
+todolist: 
+- make variable tvSoldOut
+- call find amount of tv sold
+- find amount of tv in stock
+- if sold-instock = 0 return value
+
+
 * **Opdracht 2c:** Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die over AmbiLight beschikken.
 * **Opdracht 2d:** Schrijf een functie die alle tv's van laagste naar hoogste prijs sorteert.
