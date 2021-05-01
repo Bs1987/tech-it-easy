@@ -205,3 +205,8 @@ const tvTypes = inventory.map((tvType) => {
 // - find amount of tv in stock
 // - if sold-instock = 0 return value
 //
+
+let tvSoldArray = inventory.map((television) => {
+    return television.originalStock - television.sold;
+})
+console.log(tvSoldArray);
