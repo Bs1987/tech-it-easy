@@ -112,8 +112,8 @@ STEPS:
     - [x] log the data we need: televison.type
     - [x] console.log(televison.type)
     - [x] return value from the callback
-- [] expect something like this: `[43PUS6504/12', 43PUS6504/12', 43PUS6504/12', 43PUS6504/12', etc]`
-- [] Loop over the array of types and return them after each other (maybe google it)
+- [x] put data in new array (tvTypeArray)    
+- [x] expect something like this: `[43PUS6504/12', 43PUS6504/12', 43PUS6504/12', 43PUS6504/12', etc]`
 
 3. Do programming (and check each step)
 4. Cleanup (refactor)

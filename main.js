@@ -188,12 +188,8 @@ function displayTvToSellCount() {
 
 displayTvToSellCount();
 
-const tvTypes = [];
-inventory.map( (television) => {
-    console.log("These are the tv types");
-    let tvType = television.type;
-    console.log(tvType);
-    return tvType;
+const tvTypes = inventory.map((tvType) => {
+    return tvType.type;
 })
 
-let tvTypeArray = [];
+console.log(tvTypes);
