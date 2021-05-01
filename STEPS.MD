@@ -105,7 +105,7 @@ STEPS:
 
 2. make todolist
 
-- [] make a variable to store the total (tvTypes)
+- [x] make a variable to store the total (tvTypes)
 - [] inventory.map(~ *callback here* ~)
 - [] write callback for map
     - [] parameter: television

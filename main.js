@@ -188,3 +188,4 @@ function displayTvToSellCount() {
 
 displayTvToSellCount();
 
+const tvTypes = [];
