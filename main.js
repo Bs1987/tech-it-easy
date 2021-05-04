@@ -236,5 +236,6 @@ inventory.sort( (a, b) =>{
 // - calculate total amount of tvs for each type: tvInStock + tvSold
 // - calculate price: total tvs * type price
 // - calculate total revenue: add all total tv prices
+// - put it on page in blue
 
 
