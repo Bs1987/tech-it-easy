@@ -192,10 +192,10 @@ displayTvToSellCount();
 const tvTypes = inventory.map((tvType) => {
     return tvType.type;
 });
-const tvSold = inventory.map( (television) => {
+const tvSold = inventory.map((television) => {
     return television.sold;
 });
-const tvInStock = inventory.map( (television) => {
+const tvInStock = inventory.map((television) => {
     return television.originalStock;
 })
 for (let i = 0; i < inventory.length; i++) {
@@ -209,7 +209,32 @@ const tvAmbilight = inventory.map((television) => {
 })
 
 for (let i = 0; i < inventory.length; i++) {
-   if (tvAmbilight[i] === true) {
-       console.log("This tv has ambilight: ", inventory[i]);
-   }
+    if (tvAmbilight[i] === true) {
+        console.log("This tv has ambilight: ", inventory[i]);
+    }
 }
+
+
+var items = [
+    { name: 'Edward', value: 21 },
+    { name: 'Sharpe', value: 37 },
+    { name: 'And', value: 45 },
+    { name: 'The', value: -12 },
+    { name: 'Magnetic', value: 13 },
+    { name: 'Zeros', value: 37 }
+];
+
+inventory.sort( (a, b) =>{
+    return a.price- b.price;
+});
+
+// Opdracht 3
+// Opdracht 3a: Wat is onze doel-opbrengst? Bereken wat de totale opbrengst is,
+// als we alle exemplaren van ieder type zouden verkopen. Geef dit in het blauw weer op de pagina.
+// Revenue-goal: total tv times prices
+// steps:
+// - calculate total amount of tvs for each type: tvInStock + tvSold
+// - calculate price: total tvs * type price
+// - calculate total revenue: add all total tv prices
+
+
