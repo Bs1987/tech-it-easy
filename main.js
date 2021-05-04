@@ -251,3 +251,13 @@ function totalRevenue() {
 }
 
 console.log("we should make this much money: ", totalRevenue());
+
+function displayTotalExpectedRevenue() {
+    const totalCount = totalRevenue();
+    const TotalExpectedRevenueElement = document.createElement("h1");
+    TotalExpectedRevenueElement.textContent = `We should make this ${totalCount} much money`;
+    TotalExpectedRevenueElement.style.color = 'blue';
+    document.body.appendChild(TotalExpectedRevenueElement);
+}
+
+displayTotalExpectedRevenue();
