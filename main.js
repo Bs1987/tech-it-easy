@@ -214,20 +214,20 @@ const tvsSortedByPrice = inventory.sort((televisionA, televisionB) => {
 });
 
 
-let televisionPricePerType = [];
+let televisionTotalRevenuePerType = [];
 let tvTypeRevenue = "";
 inventory.map((televisionType) => {
     for (let i = 0; i < inventory.length; i++) {
         tvTypeRevenue = televisionType.originalStock * televisionType.price;
     }
-    televisionPricePerType.push(tvTypeRevenue);
+    televisionTotalRevenuePerType.push(tvTypeRevenue);
 })
 
 function totalRevenue() {
     let totalRevenue = 0;
 
-    for (let i = 0; i < televisionPricePerType.length; i++) {
-        totalRevenue += televisionPricePerType[i];
+    for (let i = 0; i < televisionTotalRevenuePerType.length; i++) {
+        totalRevenue += televisionTotalRevenuePerType[i];
     }
     return totalRevenue;
 }
@@ -235,7 +235,7 @@ function totalRevenue() {
 function displayTotalExpectedRevenue() {
     const totalCount = totalRevenue();
     const TotalExpectedRevenueElement = document.createElement("h1");
-    TotalExpectedRevenueElement.textContent = `We should make this ${totalCount} much money`;
+    TotalExpectedRevenueElement.textContent = `We should make this ${totalCount} amount of money`;
     TotalExpectedRevenueElement.style.color = 'blue';
     document.body.appendChild(TotalExpectedRevenueElement);
 }
@@ -251,4 +251,22 @@ displayTotalExpectedRevenue();
 // - calculate revenue per sold tv per type
 // - add all revenue for total revenue
 // display in green
+let soldTvRevenuePerType = [];
+let soldTvRevenue = 0;
 
+inventory.map((televisionType) => {
+    for (let i = 0; i < inventory.length; i++) {
+        soldTvRevenue = televisionType.sold * televisionType.price;
+    }
+    soldTvRevenuePerType.push(soldTvRevenue);
+})
+console.log(soldTvRevenuePerType);
+
+function totalSoldTvRevenue() {
+    let totalSoldTvRevenue = 0;
+
+    for (let i = 0; i < soldTvRevenuePerType.length; i++) {
+        totalSoldTvRevenue += soldTvRevenuePerType[i];
+    }
+    return totalSoldTvRevenue;
+}
