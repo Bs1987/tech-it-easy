@@ -222,6 +222,7 @@ for (let i = 0; i < inventory.length; i++) {
 inventory.sort((televisionA, televisionB) => {
     return televisionA.price - televisionB.price;
 });
+
 //make an empty array to start
 let televisionTotalRevenuePerType = [];
 
@@ -294,6 +295,22 @@ function displayTSoldTvRevenue() {
     TotalTvSoldRevenueElement.style.color = 'green';
     document.body.appendChild(TotalTvSoldRevenueElement);
 }
+
 //call function to display on page
 displayTSoldTvRevenue();
 
+// Opdracht 4
+// Geef de type-namen van twee tv's weer op de pagina. Welke tv's dat precies zijn, maakt niet zoveel uit.
+//     Voor nu betekent dit dat je het appenden van de nodes twee keer moet uitschrijven, dat is niet erg!
+
+function tvTypes(inventoryIndex) {
+    return `${inventoryIndex.type}`;
+}
+// console.log(tvTypes(inventory[3]))
+
+const displayFirstTvTypeElement = document.createElement("h2");
+const displaySecondTvTypeElement = document.createElement("h2");
+displayFirstTvTypeElement.textContent = tvTypes(inventory[3]);
+displaySecondTvTypeElement.textContent = tvTypes(inventory[1]);
+document.body.appendChild(displayFirstTvTypeElement);
+document.body.appendChild(displaySecondTvTypeElement);
