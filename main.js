@@ -207,24 +207,47 @@ const tvAmbilight = inventory.map((television) => {
 
 for (let i = 0; i < inventory.length; i++) {
     if (tvAmbilight[i] === true) {
-        console.log("This tv has ambilight: ", inventory[i]);
+        // console.log("This tv has ambilight: ", inventory[i]);
     }
 }
 
 
-
-const tvsSortedByPrice = inventory.sort( (televisionA, televisionB) =>{
-    return televisionA.price- televisionB.price;
+const tvsSortedByPrice = inventory.sort((televisionA, televisionB) => {
+    return televisionA.price - televisionB.price;
 });
+console.log(tvsSortedByPrice);
 
-// Opdracht 3
+// Opdracht
 // Opdracht 3a: Wat is onze doel-opbrengst? Bereken wat de totale opbrengst is,
 // als we alle exemplaren van ieder type zouden verkopen. Geef dit in het blauw weer op de pagina.
 // Revenue-goal: total tv times prices
 // steps:
-// - calculate total amount of tvs for each type: tvInStock + tvSold
-// - calculate price: total tvs * type price
+// - calculate total amount of tvs for each type: originalStock
+// - calculate price: originalStock * type price
 // - calculate total revenue: add all total tv prices
 // - put it on page in blue
 
+let televisionPricePerType = [];
+let tvTypeRevenue = "";
+console.log(televisionPricePerType);
+const originalStockPerTvType = inventory.map((televisionType) => {
+    for (let i = 0; i < inventory.length; i++) {
+        tvTypeRevenue = televisionType.originalStock * televisionType.price;
+        console.log("The total revenue of this tv is: ", televisionType.type, tvTypeRevenue);
 
+    }
+    televisionPricePerType.push(tvTypeRevenue);
+})
+
+console.log("total revenues per tv in an array: ", televisionPricePerType);
+
+function totalRevenue() {
+    let totalRevenue = 0;
+
+    for (let i = 0; i < televisionPricePerType.length; i++) {
+        totalRevenue += televisionPricePerType[i];
+    }
+    return totalRevenue;
+}
+
+console.log("we should make this much money: ", totalRevenue());
