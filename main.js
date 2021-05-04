@@ -189,9 +189,6 @@ function displayTvToSellCount() {
 displayTvToSellCount();
 
 
-const tvTypes = inventory.map((tvType) => {
-    return tvType.type;
-});
 const tvSold = inventory.map((television) => {
     return television.sold;
 });
@@ -215,17 +212,9 @@ for (let i = 0; i < inventory.length; i++) {
 }
 
 
-var items = [
-    { name: 'Edward', value: 21 },
-    { name: 'Sharpe', value: 37 },
-    { name: 'And', value: 45 },
-    { name: 'The', value: -12 },
-    { name: 'Magnetic', value: 13 },
-    { name: 'Zeros', value: 37 }
-];
 
-inventory.sort( (a, b) =>{
-    return a.price- b.price;
+const tvsSortedByPrice = inventory.sort( (televisionA, televisionB) =>{
+    return televisionA.price- televisionB.price;
 });
 
 // Opdracht 3
