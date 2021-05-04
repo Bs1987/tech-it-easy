@@ -182,7 +182,7 @@ function displayTvToSellCount() {
     //make a new variable "totalCount" and use the previous function to give it value
     const totalCount = calculateTvToSellCount();
     //make a new variable "tvToSellElement to create an element on the page"
-    const tvToSellElement = document.createElement("tvs-to-sell");
+    const tvToSellElement = document.createElement("h1");
     //add values to element
     tvToSellElement.textContent = `We need to sell: ${totalCount} tvs`;
     tvToSellElement.style.color = 'red';
@@ -251,7 +251,7 @@ function displayTotalExpectedRevenue() {
     //make a variable and use to function totalRevenue() to fill it with a value
     const totalCount = totalRevenue();
     //make a new variable to make a new element on the page
-    const TotalExpectedRevenueElement = document.createElement("total-revenue");
+    const TotalExpectedRevenueElement = document.createElement("h1");
     TotalExpectedRevenueElement.textContent = `We should make this ${totalCount} amount of money`;
     TotalExpectedRevenueElement.style.color = 'blue';
     document.body.appendChild(TotalExpectedRevenueElement);
@@ -288,7 +288,7 @@ function displayTSoldTvRevenue() {
     //make variable to hold value from previous function
     const totalCount = totalSoldTvRevenue();
     //make variable to create element to put on page
-    const TotalTvSoldRevenueElement = document.createElement("tv-sold-revenue");
+    const TotalTvSoldRevenueElement = document.createElement("h1");
     //fill element
     TotalTvSoldRevenueElement.textContent = `We have made this ${totalCount} amount of money`;
     TotalTvSoldRevenueElement.style.color = 'green';
