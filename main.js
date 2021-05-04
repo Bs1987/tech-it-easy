@@ -179,7 +179,7 @@ function calculateTvToSellCount() {
 
 function displayTvToSellCount() {
     const totalCount = calculateTvToSellCount();
-    const tvToSellElement = document.createElement("h1");
+    const tvToSellElement = document.createElement("tvs-to-sell");
     tvToSellElement.textContent = `We need to sell: ${totalCount} tvs`;
     tvToSellElement.style.color = 'red';
     document.body.appendChild(tvToSellElement);
@@ -208,11 +208,9 @@ for (let i = 0; i < inventory.length; i++) {
     }
 }
 
-
-const tvsSortedByPrice = inventory.sort((televisionA, televisionB) => {
+inventory.sort((televisionA, televisionB) => {
     return televisionA.price - televisionB.price;
 });
-
 
 let televisionTotalRevenuePerType = [];
 let tvTypeRevenue = "";
@@ -234,7 +232,7 @@ function totalRevenue() {
 
 function displayTotalExpectedRevenue() {
     const totalCount = totalRevenue();
-    const TotalExpectedRevenueElement = document.createElement("h1");
+    const TotalExpectedRevenueElement = document.createElement("total-revenue");
     TotalExpectedRevenueElement.textContent = `We should make this ${totalCount} amount of money`;
     TotalExpectedRevenueElement.style.color = 'blue';
     document.body.appendChild(TotalExpectedRevenueElement);
@@ -242,15 +240,6 @@ function displayTotalExpectedRevenue() {
 
 displayTotalExpectedRevenue();
 
-
-// * **Opdracht 3b:** Hoeveel hebben we tot nu toe verdient?
-//     Bereken hoeveel we tot nu toe verdient hebben met
-//     het aantal verkochte tv's.' +
-// 'Geef dit weer in het **groen** weer op de pagina
-//
-// - calculate revenue per sold tv per type
-// - add all revenue for total revenue
-// display in green
 let soldTvRevenuePerType = [];
 let soldTvRevenue = 0;
 
@@ -260,7 +249,6 @@ inventory.map((televisionType) => {
     }
     soldTvRevenuePerType.push(soldTvRevenue);
 })
-console.log(soldTvRevenuePerType);
 
 function totalSoldTvRevenue() {
     let totalSoldTvRevenue = 0;
@@ -270,3 +258,13 @@ function totalSoldTvRevenue() {
     }
     return totalSoldTvRevenue;
 }
+
+function displayTSoldTvRevenue() {
+    const totalCount = totalSoldTvRevenue();
+    const TotalTvSoldRevenueElement = document.createElement("tv-sold-revenue");
+    TotalTvSoldRevenueElement.textContent = `We should make this ${totalCount} amount of money`;
+    TotalTvSoldRevenueElement.style.color = 'green';
+    document.body.appendChild(TotalTvSoldRevenueElement);
+}
+
+displayTSoldTvRevenue();
