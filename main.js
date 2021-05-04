@@ -162,7 +162,6 @@ const inventory = [
     },
 ];
 
-//Program stuff
 function calculateTvToSellCount() {
     let tvSoldArray = inventory.map((television) => {
         return television.originalStock - television.sold;
@@ -188,7 +187,6 @@ function displayTvToSellCount() {
 
 displayTvToSellCount();
 
-
 const tvSold = inventory.map((television) => {
     return television.sold;
 });
@@ -207,7 +205,6 @@ const tvAmbilight = inventory.map((television) => {
 
 for (let i = 0; i < inventory.length; i++) {
     if (tvAmbilight[i] === true) {
-        // console.log("This tv has ambilight: ", inventory[i]);
     }
 }
 
@@ -215,31 +212,16 @@ for (let i = 0; i < inventory.length; i++) {
 const tvsSortedByPrice = inventory.sort((televisionA, televisionB) => {
     return televisionA.price - televisionB.price;
 });
-console.log(tvsSortedByPrice);
 
-// Opdracht
-// Opdracht 3a: Wat is onze doel-opbrengst? Bereken wat de totale opbrengst is,
-// als we alle exemplaren van ieder type zouden verkopen. Geef dit in het blauw weer op de pagina.
-// Revenue-goal: total tv times prices
-// steps:
-// - calculate total amount of tvs for each type: originalStock
-// - calculate price: originalStock * type price
-// - calculate total revenue: add all total tv prices
-// - put it on page in blue
 
 let televisionPricePerType = [];
 let tvTypeRevenue = "";
-console.log(televisionPricePerType);
-const originalStockPerTvType = inventory.map((televisionType) => {
+inventory.map((televisionType) => {
     for (let i = 0; i < inventory.length; i++) {
         tvTypeRevenue = televisionType.originalStock * televisionType.price;
-        console.log("The total revenue of this tv is: ", televisionType.type, tvTypeRevenue);
-
     }
     televisionPricePerType.push(tvTypeRevenue);
 })
-
-console.log("total revenues per tv in an array: ", televisionPricePerType);
 
 function totalRevenue() {
     let totalRevenue = 0;
@@ -250,8 +232,6 @@ function totalRevenue() {
     return totalRevenue;
 }
 
-console.log("we should make this much money: ", totalRevenue());
-
 function displayTotalExpectedRevenue() {
     const totalCount = totalRevenue();
     const TotalExpectedRevenueElement = document.createElement("h1");
@@ -261,3 +241,14 @@ function displayTotalExpectedRevenue() {
 }
 
 displayTotalExpectedRevenue();
+
+
+// * **Opdracht 3b:** Hoeveel hebben we tot nu toe verdient?
+//     Bereken hoeveel we tot nu toe verdient hebben met
+//     het aantal verkochte tv's.' +
+// 'Geef dit weer in het **groen** weer op de pagina
+//
+// - calculate revenue per sold tv per type
+// - add all revenue for total revenue
+// display in green
+
